@@ -5,18 +5,25 @@
   font-family: "Fira Sans", sans-serif;
 }
 
+body {
+  background-color: black ;
+}
 header {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 header h1 {
-  color: #AAA;
+  color: white;
   font-size: 36px;
   font-weight: 400;
   text-align: center;
 }
 header h1 strong {
-  color: #313131;
+  color: white;
+}
+
+.inital-anime {
+  display: block;
 }
 
 .content-wrap {
@@ -32,7 +39,7 @@ header h1 strong {
   padding-right: 16px;
 }
 .content-wrap aside nav h3 {
-  color: #313131;
+  color: white;
   font-size: 24px;
   margin-bottom: 16px;
 }
@@ -100,8 +107,8 @@ header h1 strong {
   margin: 32px -8px 0px;
 }
 .content-wrap main .anime-list .anime-card {
-  flex: 1 1 33.333%;
-  max-width: 33.333%;
+  flex: 1 1 20%;
+  max-width: 20%;
   padding: 16px 8px;
 }
 .content-wrap main .anime-list .anime-card a {
@@ -122,7 +129,7 @@ header h1 strong {
   transition: 0.4s;
 }
 .content-wrap main .anime-list .anime-card h3 {
-  color: #313131;
+  color: white;
 }
 .content-wrap main .anime-list .anime-card:hover figure img {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
@@ -150,4 +157,4 @@ a:link {
 
 a:hover {
   color: white;
-}/*# sourceMappingURL=main.css.map */
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimeCard from './AnimeCard';
 
-function MainContent(props) {
+function MainContentDefault(props) {
   return (
     <main>
         <div className="main-head">
@@ -29,4 +29,4 @@ function MainContent(props) {
   )
 }
 
-export default MainContent
+export default MainContentDefault
