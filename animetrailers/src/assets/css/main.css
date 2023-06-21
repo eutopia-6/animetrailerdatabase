@@ -8,6 +8,7 @@
 body {
   background-color: black ;
 }
+
 header {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -42,6 +43,7 @@ header h1 strong {
   color: white;
   font-size: 24px;
   margin-bottom: 16px;
+  margin-top: 52px;
 }
 .content-wrap aside nav a {
   display: block;
@@ -81,7 +83,7 @@ header h1 strong {
   border: none;
   display: block;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   padding: 16px;
   border-radius: 999px;
   background-color: #EEE;
@@ -157,4 +159,31 @@ a:link {
 
 a:hover {
   color: white;
+}
+
+.trailer-border {
+  border-radius: 25px;
+  width: 60%;
+  min-height: 700px;
+}
+
+h2 {
+  color: white;
+  float: right;
+  width: 39%;
+  padding: 0px;
+  margin: 0px;
+}
+
+h5 {
+  color: white;
+  position: absolute;
+  width: 37%;
+  float: right;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  top: 10%;
+  left: 61%;
+
 }

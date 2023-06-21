@@ -1,13 +1,17 @@
 import React from 'react'
-import {Routes, Route, Link} from "react-router-dom"
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
 import Home from './Home';
+import { Trailers } from './Trailers';
 
 function App() {
   return (
 <div >
-  <Routes>
-      <Route exact path="/" element={<Home/>}/>
-  </Routes>
+  <Router>
+    <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/trailers/:id" element={<Trailers/>}/>
+    </Routes>
+  </Router>
 </div>
   )
 }

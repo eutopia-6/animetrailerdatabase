@@ -17,18 +17,18 @@ function Home() {
     SetTopAnime(temp.data.slice(0, 20));
   }
 
-  const HandleSearch = e => {
-    e.preventDefault();
-    
-    FetchAnime(search);
-  }
-
   const FetchAnime = async (query) => {
     const temp = await fetch(
       `https://api.jikan.moe/v4/anime?q=${query}&order_by=title&sort=asc&limit=10`).then(
         res => res.json());
 
         SetAnimeList(temp.data);
+  }
+
+  const HandleSearch = e => {
+    e.preventDefault();
+    
+    return FetchAnime(search);
   }
   
   useEffect(() => {
@@ -40,21 +40,20 @@ function Home() {
     SetIsLoading(animeList.length === 0);
   }, [animeList])
 
-
   return (
     <div className="App">
       <Header/>
       {isLoading ?       
       <div className="content-wrap">
           <Sidebar topAnime={topAnime.slice(0, 8)}/>
-          <MainContent
+          <MainContentDefault
           HandleSearch={HandleSearch}
           search={search}
           SetSearch={SetSearch}
           animeList={topAnime}/>
       </div> :       
       <div className="content-wrap">
-          <Sidebar topAnime={topAnime}/>
+          <Sidebar topAnime={topAnime.slice(0, 8)}/>
           <MainContent
           HandleSearch={HandleSearch}
           search={search}

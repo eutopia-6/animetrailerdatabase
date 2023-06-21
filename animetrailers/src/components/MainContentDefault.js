@@ -13,7 +13,8 @@ function MainContentDefault(props) {
                     placeholder="Search for an anime... "
                     required
                     value={props.search}
-                    onChange={e => props.SetSearch(e.target.value)}/>
+                    onChange={e => props.SetSearch(e.target.value)}
+                    />
             </form>
         </div>
         <div className="anime-list">
@@ -22,6 +23,8 @@ function MainContentDefault(props) {
               anime={anime.images.jpg}
               animeTitle={anime.title}
               animeURL={anime.trailer.embed_url}
+              synopsis = {anime.synopsis}
+              uniqueId = {anime.mal_id}
               key={anime.mal_id}/>
               ))}
         </div>
