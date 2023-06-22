@@ -42,7 +42,6 @@ function Home() {
 
   return (
     <div className="App">
-      <Header/>
       {isLoading ?       
       <div className="content-wrap">
           <Sidebar topAnime={topAnime.slice(0, 8)}/>

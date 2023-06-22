@@ -10,8 +10,8 @@ body {
 }
 
 header {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 header h1 {
   color: white;
@@ -21,6 +21,12 @@ header h1 {
 }
 header h1 strong {
   color: white;
+}
+
+header h1 strong:hover {
+  background-color: #313131;
+  color: #AAA;
+  
 }
 
 .inital-anime {
@@ -183,7 +189,7 @@ h5 {
   border: 0px;
   padding: 0px;
   margin: 0px;
-  top: 10%;
+  top: 20%;
   left: 61%;
 
 }
